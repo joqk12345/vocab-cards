@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# Vocab Cards
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern web application for managing and learning vocabulary across different domains. Built with React, this application provides an intuitive interface for organizing, reviewing, and exporting vocabulary cards.
 
-## Available Scripts
+![Vocab Cards Demo](demo.gif)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Domain Management**
+  - Create and manage multiple vocabulary domains
+  - Select multiple domains simultaneously
+  - View domain statistics and word counts
+  - Organize vocabulary by categories
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Vocabulary Cards**
+  - Display words with phonetics, parts of speech, and definitions
+  - Show example sentences with translations
+  - Include additional notes and explanations
+  - Navigate through cards with previous/next buttons
+  - Domain tags for easy identification
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Data Management**
+  - Import vocabulary from Markdown files
+  - Export vocabulary to Markdown format
+  - Generate PowerPoint presentations for learning
+  - Select target domain during import
+  - Batch import and export capabilities
 
-### `npm test`
+- **User Interface**
+  - Modern and clean design
+  - Responsive layout for different screen sizes
+  - Smooth animations and transitions
+  - Domain tags and visual indicators
+  - Intuitive navigation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/vocab-cards.git
+cd vocab-cards
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application will be available at `http://localhost:3000`.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Importing Vocabulary
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Prepare a Markdown file with the following format:
+```markdown
+# Word
+- 音标：[phonetic]
+- 词性：[part of speech]
+- 释义：[definition]
+- 例句：[example]
+- 翻译：[translation]
+- 备注：[notes]
+- 解释：[explanation]
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Click the "导入 Markdown" button
+3. Select your Markdown file
+4. Choose the target domain
+5. Confirm import
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Managing Domains
 
-## Learn More
+- Create new domains using the "添加领域" button
+- Select multiple domains using checkboxes
+- View word counts and statistics for each domain
+- Use the "全选" button to select all domains
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Reviewing Vocabulary
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Navigate through cards using arrow buttons
+- View complete word information including:
+  - Phonetics and part of speech
+  - Definition and examples
+  - Additional notes and explanations
+- Filter words by domain
+- Track progress through the word list
 
-### Code Splitting
+### Exporting Data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Export to Markdown: Preserves all word information in text format
+- Export to PowerPoint: Creates presentation slides for learning
+  - Title slide with domain information
+  - Individual slides for each word
+  - Example sentences and translations
+  - Professional formatting
 
-### Analyzing the Bundle Size
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- React 18.2.0
+- pptxgenjs 3.12.0 (for PowerPoint export)
+- Modern CSS with Flexbox
+- Responsive Design
 
-### Making a Progressive Web App
+## Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `npm start` - Start development server
+- `npm test` - Run tests
+- `npm run build` - Build for production
+- `npm run eject` - Eject from Create React App
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Feel free to submit issues and enhancement requests!
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License - feel free to use this project for your own learning purposes.
