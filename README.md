@@ -2,7 +2,10 @@
 
 A modern web application for managing and learning vocabulary across different domains. Built with React, this application provides an intuitive interface for organizing, reviewing, and exporting vocabulary cards.
 
-![Vocab Cards Demo](demo.gif)
+<div align="center">
+  <img src="./img/image.png" alt="Vocab Cards Interface" width="800"/>
+  <p><em>Vocab Cards Interface showing vocabulary review with domain management</em></p>
+</div>
 
 ## Features
 
